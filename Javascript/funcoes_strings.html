@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Manipulando Strings com métodos JS</h1>
+    <script>
+        var nome = ' Breno Oliveira Gomes ';
+
+        // toUpperCase transforma toda a string em Minusculo
+        document.write('<h3> toLowerCase </h3>' + nome.toLowerCase() + '<hr/>');
+
+        // toUpperCase transforma toda a string em Maiusculo
+        document.write('<h3> toUpperCase </h3>' + nome.toUpperCase() + '<hr/>');
+
+        // indexOf retorna a posição da primeira ocorrência de um caractere da string, ou seja, se a string se repete mais de uma vez no texo, ela retorna a primeira posição na qual ela aparece 
+        document.write('<h3> indexOf </h3>' + nome.indexOf('o') + '<hr/>');
+
+        // length retorna a quantidade de caracteres de todo o tamanho da string, incluindo espaços vazios
+        document.write('<h3> length </h3>' + nome.length + '<hr/>');
+
+        // charAt retorna o caractere de acordo com a posição escolhida como parametro, posição essa que é lida como indice, sendo o primeiro elemento o indice 0
+        document.write('<h3> charAt </h3>' + nome.charAt(8) + '<hr/>');
+
+        // replace é utilizado para substituir/sobrepor um texto, vc passa a string que deseja substituir e usa a virgula para passar o novo valor que deseja sobrepor a stringa anterior. 
+        document.write('<h3> replace </h3>' + nome.replace('Breno Oliveira Gomes', 'Lindo Gomes Oliveira') + '<hr/>');
+
+        // substr extrai uma parte da string, começando em um indice especificado como primeiro parametro e continuado por um determinado número de caracteres que seria o comprimento de indices que deseja extrair.
+        document.write('<h3> substr </h3>' + nome.substr(1, 5) + '<hr/>');
+
+        // remove espaços nas extremidades da string
+        document.write('<h3> trim </h3>' + '-' + nome.trim() + '-')
+    </script>
+</body>
+</html>
